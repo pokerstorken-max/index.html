@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mina nedladdningar</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f3f6fb;
+  color: #172033;
+}
+h1 { text-align: center; }
+p { color: #64748b; }
+.file {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.download {
+  background: #1769e0;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.download:hover { background: #0e4fae; }
+@media(max-width:480px) {
+  .file { flex-wrap: wrap; }
+  .download { text-align: center; width: 100%; }
+}
+</style>
+</head>
+<body>
+<h1>Mina nedladdningar</h1>
+<p>Välj en fil nedan för att ladda ner den.</p>
+
+<div class="file">
+  <strong>📦 Paket 1.zip</strong>
+  <a class="download"
+     href="KLISTRA_IN_LÄNK_1"
+     target="_blank" rel="noopener">
+    ↓ Ladda ner
+  </a>
+</div>
+
+<div class="file">
+  <strong>📦 Paket 2.zip</strong>
+  <a class="download"
+     href="KLISTRA_IN_LÄNK_2"
+     target="_blank" rel="noopener">
+    ↓ Ladda ner
+  </a>
+</div>
+</body>
+</html>
